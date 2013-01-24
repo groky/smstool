@@ -1,0 +1,17 @@
+<h1><%= @title %></h1>
+
+<table>
+	<th>Phone</th>
+	<th>Email</th>
+	<th></th>
+	<th></th>
+	<%for user in @users%>
+		<tr>
+			<td><%=user.phone%></td>
+			<td><%=user.email%></td>
+			<td><%=edit_user_path user %></td>
+			<td><%=delete_user_path user %></td>
+		</tr>
+	<%end%>
+</table>
+<%=register_path%>

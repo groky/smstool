@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  to_client_id: 1
+  from_client_id: 1
+  amount: 
+  transaction_type_id: 1
+
+two:
+  to_client_id: 1
+  from_client_id: 1
+  amount: 
+  transaction_type_id: 1

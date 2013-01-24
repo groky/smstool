@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client_id: 1
+  from_number: 
+  to_number: 
+
+two:
+  client_id: 1
+  from_number: 
+  to_number: 

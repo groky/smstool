@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <%= stylesheet_link_tag "blueprint/screen", :media=> "screen projection" %>
+  <%= stylesheet_link_tag "blueprint/print", :media=>"print"%>
+  <%= stylesheet_link_tag "topnbottom"%>
+
+<!--[if IE]>
+	<link rel="stylesheet" href="blueprint/ie.css" type="text/css" media="screen, projection" />
+<![endif]--> 
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="topstrip">
+			<div class="container">
+				<%= render 'layouts/header' %>
+			</div>
+		</div>
+		<div class="container">
+			<div class="span-24">		
+			<%= yield %>
+			</div>
+		</div>		
+		<div class="push"></div>
+	</div>
+	<!-- the footer -->	
+	<div class="footer">
+	 	<div class="container">
+			<%= render 'layouts/footer' %>
+		</div>
+	</div>
+	
+</body>
+</html>
+
